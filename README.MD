@@ -22,7 +22,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Training and Testing
-PM1_AI_CaseStudy.ipynb notebook contains the end-to-end training and testing codes. It visualizes dataset, processes data, creates the model, performs training and testing, and save the model in the form of a compiled TorchScript ("model_scripted.pt") so that we can directly use it without creating the model again while deploying.
+selfie_classification.ipynb notebook contains the end-to-end training and testing codes. It visualizes dataset, processes data, creates the model, performs training and testing, and save the model in the form of a compiled TorchScript ("model_scripted.pt") so that we can directly use it without creating the model again while deploying.
 
 Transfer learning strategy was used because there are a large number of state-of-the-art image classifiers pre-trained on a extremely large dataset such as ImageNet1K. Therefore, it is advantageous to use these exceptionally capable pre-trained models as feature extractors since the selfie dataset can also be seen as a subset of ImageNet1K dataset. During preprocessing, Resize, RandomHorizontalFlipping and Normalization are applied to the dataset. To minimize the computational cost and get rid of the abundant information the images are resized to 64x64 resolution. Random horizontal flipping is used for augmentation and Normalization was applied with ImageNet dataset statistics (mean, std) in order to avoid the distribution mismatch between the pretrained (frozen) model and the new dataset.
 
