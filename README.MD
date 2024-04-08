@@ -31,7 +31,7 @@ ConvNeXt Tiny model was chosen because of its outstanding performance (82.52% Ac
 ## Deployment
 fastapi_deploy.py script deploys the model using Python FastAPI. Please do not forget to modify the model_path variable in line 16 accordingly, it may differ depending on where you run the script.
 ```bash
-model_path = "./PM1_AI_CaseStudy/model_scripted.pt"
+model_path = "./model_scripted.pt"
 ```
 
 ## Additional Test Images

@@ -13,7 +13,7 @@ from matplotlib.figure import Figure
 
 
 # Please specify the path to the model
-model_path = "./PM1_AI_CaseStudy/model_scripted.pt"
+model_path = "./model_scripted.pt"
 
 # Adopted and modified from https://github.com/aasimsani/model-quick-deploy
 
